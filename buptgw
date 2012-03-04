@@ -1,0 +1,28 @@
+#!/bin/bash
+# author: Ernest Du 
+# please change name and pass to your own username and password.
+
+name=your_username
+pass=your_password
+
+function log_in
+{
+	curl --silent -d "username=$name&password=$(echo -n $pass|md5sum|cut -c 9-24)&drop=0&type=1&n=100" "http://gw.bupt.edu.cn/cgi-bin/do_login"
+	echo "You've logged in!"
+
+}
+
+function log_out
+{
+	curl --silent -d "username=$name&password=$pass&drop=0&type=1&n=1" "http://gw.bupt.edu.cn/cgi-bin/force_logout"
+	echo
+}
+
+case $1 in 
+-i)
+	log_in;;
+-o)
+	log_out;;
+*)
+	echo "use -i to login, -o to logout"
+esac
