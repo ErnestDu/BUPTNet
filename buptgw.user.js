@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name           BUPTNet Gateway Auto Login
-// @namespace      http://duxin.info/
+// @namespace      http://userscripts.org/scripts/show/127461 
 // @description	   Auto login script for BUPT campus net
 // @include        http://10.3.8.150/index.html*
 // @include 	   http://gw.bupt.edu.cn/index.html*
@@ -440,10 +440,5 @@ function wait(msecs)
 
 do_login();	// login
 var weburl=document.referrer;	// 
-
-
 wait(500); //wait 1 sec to open your website
 window.location=weburl;
-
-
-
