@@ -1,13 +1,14 @@
 // ==UserScript==
-// @name           BUPTNet Gateway Auto Login
-// @namespace      http://userscripts.org/scripts/show/127461 
-// @description	   Auto login script for BUPT campus net
-// @include        http://10.3.8.150/index.html*
-// @include 	   http://gw.bupt.edu.cn/index.html*
+// @name 		BUPTNet Gateway Auto Login
+// @namespace  	http://userscripts.org/scripts/show/127461 
+// @description	Auto login script for BUPT campus net
+// @include		http://10.3.8.150/index.html*
+// @include 	http://gw.bupt.edu.cn/index.html*
 // ==/UserScript==
-// @author	   Ernest Du
-// @date	   2012.03.04
-
+// @author		Ernest Du
+// @date	   	2012.03.04
+// @update	  	2012.03.19
+//
 var uname="your_username";	// input your username here
 var pass="your_password";	// input your password here
 
