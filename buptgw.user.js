@@ -424,9 +424,16 @@ function do_login()
  	var data="username="+uname+"&password="+pass2+"&drop="+drop+"&type=1&n=100";
 
  	var con=postData("/cgi-bin/do_login", "post", data);
- 	//alert(con); 
- 	
+ 	//alert(con); 	
  }
+
+function force_logout()
+{	
+	
+ 	var drop=1;
+ 	var data="username="+uname+"&password="+pass+"&drop="+drop+"&type=1&n=1";
+ 	con=postData("/cgi-bin/force_logout", "post", data);
+}
 
 function wait(msecs)	
 {
@@ -438,6 +445,7 @@ function wait(msecs)
 		}	
 } 
 
+force_logout();
 do_login();	// login
 var weburl=document.referrer;	// 
 wait(500); //wait 1 sec to open your website
