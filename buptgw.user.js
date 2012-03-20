@@ -446,7 +446,8 @@ function wait(msecs)
 		}	
 } 
 
-force_logout();
+//force_logout();
+//wait(500);
 do_login();	// login
 var weburl=document.referrer;	// 
 wait(500); //wait 1 sec to open your website
